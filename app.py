@@ -19,7 +19,7 @@ class InputData(BaseModel):
 
 @app.post("/predict")
 def predict(data: InputData):
-    
+    return {"answer": "Kuralini received your question: " + data.question}    
 
 @app.get("/health")
 def health():
