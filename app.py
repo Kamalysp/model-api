@@ -15,9 +15,7 @@ app.add_middleware(
 model = joblib.load("model/model.pkl")
 
 class InputData(BaseModel):
-    feature1: float
-    feature2: float
-    feature3: float
+    question: str
 
 @app.post("/predict")
 def predict(data: InputData):
