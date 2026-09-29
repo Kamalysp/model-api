@@ -19,9 +19,7 @@ class InputData(BaseModel):
 
 @app.post("/predict")
 def predict(data: InputData):
-    features = np.array([[data.feature1, data.feature2, data.feature3]])
-    prediction = model.predict(features)
-    return {"prediction": prediction.tolist()}
+    
 
 @app.get("/health")
 def health():
