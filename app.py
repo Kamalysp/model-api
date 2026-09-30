@@ -31,8 +31,12 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 2:\nகற்றதனால் ஆய பயனென்கொல் வாலறிவன்\nநற்றாள் தொழாஅர் எனின்\n\nMeaning: What is the use of all one's learning if they do not worship the feet of the one who possesses perfect knowledge?"
         }
-
+    if "kural 3" in question or "thirukkural 3" in question:
+        return {
+            "answer": "Thirukkural 3:\nமலர்மிசை ஏகினான் மாணடி சேர்ந்தார்\nநிலமிசை நீடுவாழ் வார்\n\nMeaning: Those who reach the feet of Him who occupies the flower-like heart will live long upon this earth."
+        }
     return {
+   
         "answer": "Sorry, I don't know the answer yet!"
     }    
 
