@@ -39,6 +39,10 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 4:\nவேண்டுதல் வேண்டாமை இலானடி சேர்ந்தார்க்கு\nயாண்டும் இடும்பை இல\n\nMeaning: Those who have reached the feet of Him who is beyond desire and aversion will never suffer sorrow."
         }
+    if "kural 5" in question or "thirukkural 5" in question:
+        return {
+            "answer": "Thirukkural 5:\nஇருள்சேர் இருவினையும் சேரா இறைவன்\nபொருள்சேர் புகழ்புரிந்தார் மாட்டு\n\nMeaning: The two kinds of deeds, good and evil, do not affect those who delight in the true praise of God."
+        }
     return {
    
         "answer": "Sorry, I don't know the answer yet!"
