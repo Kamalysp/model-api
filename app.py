@@ -51,6 +51,14 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 7:\nதனக்குவமை இல்லாதான் தாள்சேர்ந்தார்க் கல்லால்\nமனக்கவலை மாற்றல் அரிது\n\nMeaning: Except for those who have reached the feet of Him who is incomparable, it is difficult to remove the distress of the mind."
         }
+    if "kural 8" in question or "thirukkural 8" in question:
+        return {
+            "answer": "Thirukkural 8:\nஅறவாழி அந்தணன் தாள்சேர்ந்தார்க் கல்லால்\nபிறவாழி நீந்தல் அரிது\n\nMeaning: Except for those who have reached the feet of the Virtuous One, it is difficult to cross the sea of births."
+        }
+    if "kural 9" in question or "thirukkural 9" in question:
+        return {
+            "answer": "Thirukkural 9:\nகோளில் பொறியில் குணமிலவே எண்குணத்தான்\nதாளை வணங்காத் தலை\n\nMeaning: The head that does not bow to the feet of Him who possesses eight virtues is like a sense organ without function."
+        }
     return {
    
         "answer": "Sorry, I don't know the answer yet!"
