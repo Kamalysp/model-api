@@ -17,9 +17,6 @@ model = joblib.load("model/model.pkl")
 class InputData(BaseModel):
     question: str
 
-@app.post("/predict")
-def predict(data: InputData):
-    return {"answer": "Kuralini received your question: " + data.question}    
 
 @app.get("/health")
 def health():
