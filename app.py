@@ -35,6 +35,10 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 3:\nமலர்மிசை ஏகினான் மாணடி சேர்ந்தார்\nநிலமிசை நீடுவாழ் வார்\n\nMeaning: Those who reach the feet of Him who occupies the flower-like heart will live long upon this earth."
         }
+    if "kural 4" in question or "thirukkural 4" in question:
+        return {
+            "answer": "Thirukkural 4:\nவேண்டுதல் வேண்டாமை இலானடி சேர்ந்தார்க்கு\nயாண்டும் இடும்பை இல\n\nMeaning: Those who have reached the feet of Him who is beyond desire and aversion will never suffer sorrow."
+        }
     return {
    
         "answer": "Sorry, I don't know the answer yet!"
