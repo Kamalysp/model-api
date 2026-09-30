@@ -47,6 +47,10 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 6:\nபொறிவாயில் ஐந்தவித்தான் பொய்தீர் ஒழுக்க\nநெறிநின்றார் நீடுவாழ் வார்\n\nMeaning: Those who stand firmly in the faultless path of the One who has subdued the five senses will live long."
         }
+    if "kural 7" in question or "thirukkural 7" in question:
+        return {
+            "answer": "Thirukkural 7:\nதனக்குவமை இல்லாதான் தாள்சேர்ந்தார்க் கல்லால்\nமனக்கவலை மாற்றல் அரிது\n\nMeaning: Except for those who have reached the feet of Him who is incomparable, it is difficult to remove the distress of the mind."
+        }
     return {
    
         "answer": "Sorry, I don't know the answer yet!"
