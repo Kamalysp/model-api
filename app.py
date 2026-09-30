@@ -43,6 +43,10 @@ def predict(data: InputData):
         return {
             "answer": "Thirukkural 5:\nஇருள்சேர் இருவினையும் சேரா இறைவன்\nபொருள்சேர் புகழ்புரிந்தார் மாட்டு\n\nMeaning: The two kinds of deeds, good and evil, do not affect those who delight in the true praise of God."
         }
+    if "kural 6" in question or "thirukkural 6" in question:
+        return {
+            "answer": "Thirukkural 6:\nபொறிவாயில் ஐந்தவித்தான் பொய்தீர் ஒழுக்க\nநெறிநின்றார் நீடுவாழ் வார்\n\nMeaning: Those who stand firmly in the faultless path of the One who has subdued the five senses will live long."
+        }
     return {
    
         "answer": "Sorry, I don't know the answer yet!"
