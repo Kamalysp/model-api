@@ -26,10 +26,16 @@ class InputData(BaseModel):
 
 @app.post("/predict")
 def predict(data: InputData):
-    question = data.question.lower()
+    question = data.question.lower().strip()
 
-    for number in kurals:
-        if f"kural {number}" in question or f"thirukkural {number}" in question:
+    import re
+
+    match = re.search(r"(?:thirukkural|thirukural|kural)\s*(\d+)", question)
+
+    if match:
+        number = match.group(1)
+
+        if number in kurals:
             kural = kurals[number]
 
             return {
@@ -43,6 +49,7 @@ def predict(data: InputData):
 
     return {
         "answer": "Sorry, I don't know the answer yet!"
+    
     }
 
 @app.get("/health")
